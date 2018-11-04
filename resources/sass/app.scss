@@ -5,17 +5,45 @@
 // Variables
 @import 'variables';
 
-// Base
-@import './base/base';
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Base
+@import './base/base';
+
+// Components
+@import './components/card';
+
 // Pages
 @import './pages/home';
+
+body {
+  background: #eeeeef;
+}
 
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+.row .col.s12 {
+  min-width: 250px;
+  max-width: 300px;
+  margin: auto;
+}
+
+#app {
+  background-color: #fff;
+  margin: 20px;
+  max-width: $max-width;
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: $max-width) {
+  #app {
+    margin: 20px auto;
+  }
+} 
 
