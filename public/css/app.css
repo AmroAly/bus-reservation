@@ -10488,6 +10488,19 @@ header nav ul.right.hide-on-med-and-down li a:hover {
   color: #fff;
 }
 
+.search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100vh;
+}
+
+.search form {
+  width: 100%;
+}
+
 .card {
   min-width: 220px;
 }

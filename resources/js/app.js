@@ -15,6 +15,7 @@ import Header from './components/Header';
 import Loader from './components/Loader';
 import Card from './components/Card';
 import Footer from './components/Footer';
+import Search from './components/Search';
 
 class App extends React.Component {
     constructor(props) {
@@ -37,6 +38,7 @@ class App extends React.Component {
                     <div className="home__img">
                         <img src="/images/optimized-bus-2.jpg" />
                     </div>
+                    <Search />
                     <div  className="container home">
                         <div className="text-center  home__heading">
                             <h3>Popular Buses</h3>
