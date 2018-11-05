@@ -10482,6 +10482,25 @@ img {
   min-width: 220px;
 }
 
+.loader {
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 35%;
+  left: 50%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-align: center;
+}
+
+.loader h3 {
+  color: grey;
+}
+
+.hidden {
+  display: none;
+}
+
 .home__heading {
   max-width: 300px;
   margin: auto;
@@ -10505,6 +10524,16 @@ img {
 
 body {
   background: #eeeeef;
+}
+
+.wrapper-hidden {
+  opacity: 0;
+}
+
+.wrapper {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .navbar-laravel {

@@ -13,12 +13,21 @@
 
 // Components
 @import './components/card';
+@import './components/loader';
 
 // Pages
 @import './pages/home';
 
 body {
   background: #eeeeef;
+}
+
+.wrapper-hidden {
+  opacity: 0;
+}
+.wrapper {
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 .navbar-laravel {

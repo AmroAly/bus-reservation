@@ -1,0 +1,17 @@
+
+.loader {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 50%;
+    transition: all .3s;
+    text-align: center;
+
+    h3 {
+        color: grey;
+    }
+}
+
+.hidden {
+    display: none;
+}
