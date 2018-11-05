@@ -10484,6 +10484,10 @@ img {
   clear: both;
 }
 
+header nav ul.right.hide-on-med-and-down li a:hover {
+  color: #fff;
+}
+
 .card {
   min-width: 220px;
 }
@@ -10543,6 +10547,10 @@ footer .footer-left {
   margin: auto;
   border-bottom: 3px solid #4db6ac;
   margin-bottom: 20px;
+}
+
+.home__heading h3 {
+  color: #495057;
 }
 
 .home__img {

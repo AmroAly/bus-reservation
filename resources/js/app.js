@@ -1,6 +1,10 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+    BrowserRouter as Router,
+    Route
+} from 'react-router-dom';
 
 import 'material-icons/iconfont/material-icons.scss';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -70,4 +74,8 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(
+<Router>
+    <Route path="/" exact component={App} />
+</Router>
+, document.getElementById('app'));
