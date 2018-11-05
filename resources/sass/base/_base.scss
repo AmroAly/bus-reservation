@@ -8,3 +8,9 @@ a:hover {
 img {
     max-width: 100%;
 }
+
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}

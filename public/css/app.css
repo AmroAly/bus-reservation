@@ -10478,6 +10478,12 @@ img {
   max-width: 100%;
 }
 
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .card {
   min-width: 220px;
 }
@@ -10499,6 +10505,37 @@ img {
 
 .hidden {
   display: none;
+}
+
+footer {
+  padding: 50px 50px 20px 50px;
+}
+
+footer h4,
+footer p,
+footer ul li a {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+footer .footer-left,
+footer .footer-right {
+  display: inline-block;
+  width: 50%;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+footer .footer-left {
+  float: left;
 }
 
 .home__heading {

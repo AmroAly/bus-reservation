@@ -10,6 +10,7 @@ import './bootstrap';
 import Header from './components/Header';
 import Loader from './components/Loader';
 import Card from './components/Card';
+import Footer from './components/Footer';
 
 class App extends React.Component {
     constructor(props) {
@@ -63,6 +64,7 @@ class App extends React.Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }
