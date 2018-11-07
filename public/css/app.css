@@ -10495,10 +10495,46 @@ header nav ul.right.hide-on-med-and-down li a:hover {
   right: 0;
   bottom: 0;
   max-height: 100vh;
+  top: 20%;
 }
 
-.search form {
+.search .row {
+  background-color: #ffffffb8;
+  max-width: 600px;
+  padding: 20px;
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+  border-radius: 3px;
+}
+
+.search .row > * {
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+}
+
+.search .row .search__heading {
+  margin: 0 auto;
+}
+
+.search .row .search__form {
+  color: red;
   width: 100%;
+}
+
+.search .row .center {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .search .row {
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  .search .row > * {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .card {

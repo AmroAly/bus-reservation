@@ -6,9 +6,41 @@
     right: 0;
     bottom: 0;
     max-height: 100vh;
+    top: 20%;
 
-    form {
-        width: 100%;
+    .row {
+        background-color: #ffffffb8;
+        max-width: 600px;
+        padding: 20px;
+        transform: skewX(20deg);
+        border-radius: 3px;
+
+        & > * {
+            transform: skewX(-20deg);
+        }        
+
+        .search__heading {
+            margin: 0 auto;
+        }
+        .search__form {
+            color: red;
+            width: 100%;
+        }
+        .center {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .search {
+        .row {
+            transform: none;
+            & > * {
+                transform: none;
+            }
+        }
+
     }
 }
 

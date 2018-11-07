@@ -36,6 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
      M.Sidenav.init(elems);
   });
 
+document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('select');
+var instances = M.FormSelect.init(elems);
+});
+
 let token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
