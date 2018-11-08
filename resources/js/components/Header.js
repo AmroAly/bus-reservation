@@ -19,7 +19,8 @@ class Header extends Component {
                 </nav>
 
                 <ul className="sidenav" id="mobile-demo">
-                <li><Link to="/sign_in">Sign In</Link></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/sign_in">Sign In</Link></li>
                     <li><a href="mobile.html">Our App</a></li>
                 </ul>
             </header>

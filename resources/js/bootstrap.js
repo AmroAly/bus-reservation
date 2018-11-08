@@ -34,6 +34,9 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
      M.Sidenav.init(elems);
+     document.querySelector('#mobile-demo li a').addEventListener('click', function () {
+     M.Sidenav.getInstance(document.querySelector('#mobile-demo')).close();
+    })
   });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -42,6 +45,8 @@ var instances = M.FormSelect.init(elems);
 });
 
 let token = document.head.querySelector('meta[name="csrf-token"]');
+
+
 
 if (token) {
     window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;

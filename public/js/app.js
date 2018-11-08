@@ -40653,6 +40653,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.sidenav');
   __WEBPACK_IMPORTED_MODULE_0_materialize_css_dist_js_materialize_min_js___default.a.Sidenav.init(elems);
+  document.querySelector('#mobile-demo li a').addEventListener('click', function () {
+    __WEBPACK_IMPORTED_MODULE_0_materialize_css_dist_js_materialize_min_js___default.a.Sidenav.getInstance(document.querySelector('#mobile-demo')).close();
+  });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -62946,6 +62949,15 @@ var Header = function (_Component) {
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
+                            { to: '/' },
+                            'Home'
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'li',
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
                             { to: '/sign_in' },
                             'Sign In'
                         )
@@ -63243,22 +63255,22 @@ var Search = function (_Component) {
                         { className: "search__form" },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "div",
-                            { className: "col s12 m6 l3 xl3" },
+                            { className: "col s6 m3 l3 xl3" },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", autoFocus: true })
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "div",
-                            { className: "col s12 m6 l3 xl3" },
+                            { className: "col s6 m3 l3 xl3" },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text" })
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "div",
-                            { className: "col s12 m6 l3 xl3" },
+                            { className: "col s6 m3 l3 xl3" },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text" })
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "div",
-                            { className: "col s12 m6 l3 xl3" },
+                            { className: "col s6 m3 l3 xl3" },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "select",
                                 null,

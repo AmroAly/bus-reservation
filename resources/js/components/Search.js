@@ -8,16 +8,16 @@ class Search extends Component {
                 <div className="row">
                     <h4 className="search__heading">Find Your Seat</h4>
                     <form className="search__form">
-                        <div className="col s12 m6 l3 xl3">
+                        <div className="col s6 m3 l3 xl3">
                             <input type="text" autoFocus />
                         </div>
-                        <div className="col s12 m6 l3 xl3">
+                        <div className="col s6 m3 l3 xl3">
                             <input type="text" />
                         </div>
-                        <div className="col s12 m6 l3 xl3">
+                        <div className="col s6 m3 l3 xl3">
                             <input type="text" />
                         </div>
-                        <div className="col s12 m6 l3 xl3">
+                        <div className="col s6 m3 l3 xl3">
                         <select>
                             <option value="">Options</option>
                             <option value="1">Option 1</option>
