@@ -10505,6 +10505,8 @@ header nav ul.right.hide-on-med-and-down li a:hover {
   -webkit-transform: skewX(20deg);
           transform: skewX(20deg);
   border-radius: 3px;
+  -webkit-box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+          box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
 
 .search .row > * {
@@ -10614,6 +10616,24 @@ footer .footer-left {
   width: 100%;
   height: auto;
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 440px) {
+  .container.home {
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (min-width: 441px) and (max-width: 519px) {
+  .container.home {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 610px) {
+  .container.home {
+    margin-top: 100px;
+  }
 }
 
 body {

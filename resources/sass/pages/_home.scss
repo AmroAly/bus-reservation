@@ -24,3 +24,21 @@
         opacity: 0.8;
     }   
 }
+
+@media only screen and (max-width: 440px) {
+    .container.home {
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (min-width: 441px) and (max-width: 519px) {
+    .container.home {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (min-width: 520px)  and (max-width: 610px) {
+    .container.home {
+        margin-top: 100px;
+    }
+}

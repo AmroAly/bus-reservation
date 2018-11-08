@@ -16,6 +16,7 @@ import Loader from './components/Loader';
 import Card from './components/Card';
 import Footer from './components/Footer';
 import Search from './components/Search';
+import Signin from './components/Signin';
 
 class App extends React.Component {
     constructor(props) {
@@ -78,6 +79,9 @@ class App extends React.Component {
 
 ReactDOM.render(
 <Router>
-    <Route path="/" exact component={App} />
+    <div>
+        <Route path="/" exact component={App} />
+        <Route path="/sign_in" component={Signin} />
+    </div>
 </Router>
 , document.getElementById('app'));
