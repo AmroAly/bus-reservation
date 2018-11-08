@@ -35,7 +35,7 @@ class App extends React.Component {
             <div>
                 <Loader show={this.state.loading} />
                 <div className={this.state.loading ? 'wrapper-hidden': 'wrapper'}>
-                    <Header />
+
                     <div className="home__img">
                         <img src="/images/optimized-bus-2.jpg" />
                     </div>
@@ -80,6 +80,7 @@ class App extends React.Component {
 ReactDOM.render(
 <Router>
     <div>
+        <Header />
         <Route path="/" exact component={App} />
         <Route path="/sign_in" component={Signin} />
     </div>

@@ -8,10 +8,10 @@ class Header extends Component {
                 <nav className="teal lighten-2">
                     <div className="container">
                     <div className="nav-wrapper">
-                    <a href="#!" className="brand-logo">Bus Egypt</a>
+                    <Link to="/" className="brand-logo">Bus Egypt</Link>
                     <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul className="right hide-on-med-and-down">
-                        <li><a href="sass.html">Services</a></li>
+                        <li><Link to="/sign_in">Sign In</Link></li>
                         <li><a href="mobile.html">Our App</a></li>
                     </ul>
                     </div>
@@ -19,7 +19,7 @@ class Header extends Component {
                 </nav>
 
                 <ul className="sidenav" id="mobile-demo">
-                    <li><a href="sass.html">Services</a></li>
+                <li><Link to="/sign_in">Sign In</Link></li>
                     <li><a href="mobile.html">Our App</a></li>
                 </ul>
             </header>
