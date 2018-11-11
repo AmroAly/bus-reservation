@@ -10636,6 +10636,19 @@ footer .footer-left {
   }
 }
 
+.login {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.login .login__form input[type=text] {
+  color: #fff;
+}
+
+.login .login__form input[type=text]:focus + label {
+  color: #fff;
+}
+
 body {
   background: #eeeeef;
 }

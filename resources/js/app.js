@@ -71,7 +71,6 @@ class App extends React.Component {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
         );
     }
@@ -83,6 +82,7 @@ ReactDOM.render(
         <Header />
         <Route path="/" exact component={App} />
         <Route path="/sign_in" component={Signin} />
+        <Footer />
     </div>
 </Router>
 , document.getElementById('app'));
