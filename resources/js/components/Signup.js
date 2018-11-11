@@ -2,17 +2,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Signin extends Component {
-
+class Signup extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row login">
+                <div className="row signup">
                     <div className="col s12 m8">
                         <div className="card blue-grey darken-1">
-                            <form className="login__form">
+                            <form className="signup__form">
                             <div className="card-content white-text">
-                            <span className="card-title center"><h5>Sign In</h5></span>
+                            <span className="card-title center"><h5>Create an account</h5></span>
                                 <div className="row">
                                     <div className="input-field col s10">
                                     <input placeholder="Email" id="email" type="text" className="validate" />
@@ -25,13 +24,19 @@ class Signin extends Component {
                                     <label htmlFor="password">Password</label>
                                     </div>                               
                                 </div>
+                                <div className="row">
+                                    <div className="input-field col s10">
+                                    <input placeholder="Confirm Password" id="password_confirmation" type="text" className="validate" />
+                                    <label htmlFor="password_confirmation">Confirm Password</label>
+                                    </div>                               
+                                </div>
                             </div>
                             <div className="card-action">
-                            <a className="waves-effect waves-light btn" href="#">Login</a>
+                            <a className="waves-effect waves-light btn" href="#">Sign Up</a>
                             </div>
                             </form>
                             <div className="card-action">
-                            <Link to="/sign_up">Sign Up</Link>
+                            <Link to="/sign_in">Login</Link>
                             </div>
                         </div>
                     </div>
@@ -41,4 +46,4 @@ class Signin extends Component {
     }
 }
 
-export default Signin;
+export default Signup;

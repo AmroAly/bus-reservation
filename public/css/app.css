@@ -10641,12 +10641,62 @@ footer .footer-left {
   margin-bottom: 100px;
 }
 
+.login .row {
+  margin-bottom: 0;
+}
+
 .login .login__form input[type=text] {
   color: #fff;
 }
 
+.login .login__form input[type=text] + label {
+  display: none;
+}
+
 .login .login__form input[type=text]:focus + label {
+  display: block;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .login .card {
+    width: 320px;
+  }
+}
+
+.signup {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.signup .row {
+  margin-bottom: 0;
+}
+
+.signup .signup__form input[type=text] {
   color: #fff;
+}
+
+.signup .signup__form input[type=text] + label {
+  opacity: .1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.signup .signup__form input[type=text]:focus + label {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 500px) {
+  .signup .card {
+    width: 320px;
+  }
 }
 
 body {

@@ -1,5 +1,4 @@
-
-.login {
+.signup {
     margin-top: 50px;
     margin-bottom: 100px;
 
@@ -7,30 +6,24 @@
         margin-bottom: 0;
     }
 
-    .login__form {
+    .signup__form {
         input[type=text] {
             color: #fff;
         }
     
         input[type=text] + label {
-            display: none;
+            opacity: .1;
+            transition: all .3s;
         }
 
         input[type=text]:focus + label {
-            display: block;
+            opacity: 1;
         }
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .container {
-        padding-left: 0;
-        padding-right: 0;
     }
 }
 
 @media only screen and (min-width: 500px) {
-    .login  .card {
+    .signup  .card {
         width: 320px;
     }
 }

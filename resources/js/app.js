@@ -17,6 +17,7 @@ import Card from './components/Card';
 import Footer from './components/Footer';
 import Search from './components/Search';
 import Signin from './components/Signin';
+import Signup from './components/Signup';
 
 class App extends React.Component {
     constructor(props) {
@@ -82,6 +83,7 @@ ReactDOM.render(
         <Header />
         <Route path="/" exact component={App} />
         <Route path="/sign_in" component={Signin} />
+        <Route path="/sign_up" component={Signup} />
         <Footer />
     </div>
 </Router>

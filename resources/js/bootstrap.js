@@ -34,8 +34,11 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
      M.Sidenav.init(elems);
-     document.querySelector('#mobile-demo li a').addEventListener('click', function () {
-     M.Sidenav.getInstance(document.querySelector('#mobile-demo')).close();
+     document.querySelectorAll('#mobile-demo li a').forEach(function(elem) {
+        elem.addEventListener('click', function () {
+             M.Sidenav.getInstance(document.querySelector('#mobile-demo')).close();
+            // alert('clicked')
+     });
     })
   });
 
